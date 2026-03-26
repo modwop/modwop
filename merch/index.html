@@ -80,6 +80,14 @@
       <!--End mc_embed_signup-->
     </div>
   </div>
+  <script>
+      document.querySelector('a[href="#mc_embed_signup"]').addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.getElementById('mc_embed_signup');
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+  </script>
 </body>
-
 </html>
