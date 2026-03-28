@@ -118,6 +118,6 @@ a#modwop-twoyear-fadeimage img{
 a#modwop-twoyear-fadeimage:hover img{
   opacity: 0;
 }
-#shop-container .new-page-footer-wrapper{
-  display: none !important;
+.event .tt-widget{
+  padding: 10px 0;
 }
