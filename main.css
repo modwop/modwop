@@ -12,7 +12,7 @@ pre { font-size: 13px; font-weight: 400; line-height: 18px; }
 }
 .index-page,
 .merch-page .not-shop{
-  max-width: 560px;
+  max-width: 480px;
   margin: 0 auto;
 }
 .merch-page{
