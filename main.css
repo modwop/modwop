@@ -35,6 +35,9 @@ pre { font-size: 13px; font-weight: 400; line-height: 18px; }
   list-style: none;
   overflow: hidden;
 }
+#main-nav.merch{
+  margin-left: 12px;
+}
 #main-nav .title,
 #main-nav li{
   padding: 0 15px 0 5px;
