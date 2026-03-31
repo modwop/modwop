@@ -38,7 +38,7 @@ pre { font-size: 13px; font-weight: 400; line-height: 18px; }
   margin: 0;
   border-bottom: 1px solid #ccc;
 }
-#main-nav.merch{
+#main-nav.merch li:first-child{
   margin-left: 1em;
 }
 #main-nav .title,
