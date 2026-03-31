@@ -18,9 +18,8 @@ pre { font-size: 13px; font-weight: 400; line-height: 18px; }
 .merch-page{
   max-width: 1200px;
 }
-.merch-page > h1,
-.merch-page .not-shop{
-  padding: 0 1em;
+.merch-page > h1{
+  padding-left: 1em;
 }
 .page a{
   color: blue;
