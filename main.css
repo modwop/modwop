@@ -108,10 +108,12 @@ pre { font-size: 13px; font-weight: 400; line-height: 18px; }
 }
 #mc_embed_signup form{
  padding: 0 !important; 
+ margin: 0 !important; 
 }
 #mc_embed_signup .brandingLogo,
 #mc_embed_signup .indicates-required,
-#mc_embed_signup .asterisk{
+#mc_embed_signup .asterisk,
+#mc_embed_signup .foot > p{
  display: none !important; 
 }
 #mc_embed_signup .mc-field-group label{
