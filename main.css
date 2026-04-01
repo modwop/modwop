@@ -24,10 +24,6 @@ a:link{
 .merch-page > h1{
   padding-left: 14px;
 }
-.page a{
-  color: blue;
-  text-decoration: none;
-}
 #main-nav{
   display: block;
   padding: 1em 0;
