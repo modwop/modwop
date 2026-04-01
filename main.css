@@ -119,7 +119,7 @@ a#modwop-twoyear-fadeimage:hover img{
     filter: invert(1) hue-rotate(180deg);
   }
   a:link {
-    color: #B3D1FF;
+    color: #B2F2BB;
     text-decoration-color: rgba(209, 227, 255, 0.4);
     text-underline-offset: 3px;
     transition: color 0.2s ease;
@@ -128,7 +128,7 @@ a#modwop-twoyear-fadeimage:hover img{
     color: #E1BEE7;
   }
   a:hover {
-    color: #B2F2BB;
+    color: #FFE0B2;
     text-decoration-thickness: 2px;
     cursor: pointer;
   }
