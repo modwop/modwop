@@ -31,61 +31,7 @@
     </a>
     <h1>Upcoming events</h1>
     <div id="next-event" class="event"></div>
-    <script>
-      async function syncNextEvent() {
-        const targetUrl = '/home/';
-        const targetId = 'next-event';
-        const currentDiv = document.getElementById(targetId);
-        if (!currentDiv) return;
-        try {
-          const response = await fetch(targetUrl);
-          if (!response.ok) throw new Error('Network response was not ok');
-          const htmlString = await response.text();
-          const parser = new DOMParser();
-          const doc = parser.parseFromString(htmlString, 'text/html');
-          const remoteDiv = doc.getElementById(targetId);
-          if (remoteDiv) {
-            currentDiv.innerHTML = remoteDiv.innerHTML;
-          } else {
-            console.warn(`Could not find #${targetId} on ${targetUrl}`);
-          }
-        } catch (error) {
-          console.error('Error syncing event data:', error);
-        }
-      }
-      syncNextEvent();
-    </script>
-    <!--
-    <div class="event">
-      <a href="https://link.modwop.com/20260424-website-buy-presales" title="2026 Apr 24th">
-        <img src="2026-04-24-website-flyer.jpg" alt="Modwop + webuildmachines 2026 Apr 24 Wicker's Portal & Relativity Lounge + Locals">
-        <span class="open-event">Buy tickets here</span>
-      </a>
-      <blockquote>2026 Apr 24th - 8:30pm - 4am</blockquote>
-      <blockquote><b>Featuring LIVE SETS all night from</b></blockquote>
-      <blockquote><hr></blockquote>
-      <blockquote>Interlude</blockquote>
-      <blockquote>Kindohm</blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-jsswhtny-instagram" target="_blank">Jesse Whitney</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-godsdrugs-instagram" target="_blank">God's Drugs</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-relativitylounge-instagram" target="_blank">Relativity Lounge</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-wickers-portal-instagram" target="_blank">Wicker's Portal</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-tfs-web" target="_blank">TripFaceSmile.com</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-tunnel-instagram" target="_blank">Tunnel</a></blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-nemato-web" target="_blank">Nemato</a></blockquote>
-      <blockquote><hr></blockquote>
-      <blockquote>Paraflex X Turbosound rig by <a href="https://link.modwop.com/20260424-sublab-instagram" target="_blank">Sublab Sound</a></blockquote>
-      <blockquote><hr></blockquote>
-      <blockquote>1729 N 2nd St. Minneapolis, MN 55411</blockquote>
-      <blockquote><a href="https://link.modwop.com/20260424-event-directions" target="_blank">Click for directions</a></blockquote>
-      <blockquote><b>Must be age 21+ to attend</b></blockquote>
-    </div>
-    -->
-    <!--
-    <div class="event">
-      <blockquote>We're taking the winter off, check back later or subscribe to our email list below :D</blockquote>
-    </div>
-    -->
+    <script src="/load-next-event.js"></script>
     <div style="margin-bottom:20px;">
       <a class="enter-link" href="http://link.modwop.com/home">View All Events</a>
     </div>
