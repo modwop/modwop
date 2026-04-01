@@ -5,6 +5,9 @@ h3 { font-size: 18px; font-weight: 700; line-height: 28px; }
 p { font-size: 18px; font-weight: 400; line-height: 28px; } 
 blockquote { font-size: 18px; font-weight: 500; line-height: 33px; } 
 pre { font-size: 13px; font-weight: 400; line-height: 18px; }
+a:link{
+  text-decoration: underline;
+}
 .page{
   margin: 0 auto;
   max-width: 480px;
@@ -118,5 +121,8 @@ a#modwop-twoyear-fadeimage:hover img{
   }
   img, video, iframe {
     filter: invert(1) hue-rotate(180deg);
+  }
+  a:link{
+    color: #00ff00;
   }
 }
