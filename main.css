@@ -38,7 +38,7 @@ a:link{
   z-index: 100;
   background: white;
   margin: 0;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid black;
 }
 #main-nav.merch li:first-child{
   margin-left: 1em;
