@@ -113,7 +113,7 @@ a#modwop-twoyear-fadeimage:hover img{
   html {
     filter: invert(1) hue-rotate(180deg);
   }
-  a, img, a img, video, iframe, svg use {
+  a, a img, video, iframe, svg use {
     filter: invert(1) hue-rotate(180deg);
   }
   a:link {
