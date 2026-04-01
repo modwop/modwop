@@ -114,12 +114,15 @@ a#modwop-twoyear-fadeimage:hover img{
     filter: invert(1) hue-rotate(180deg);
   }
   /* Revert the link/container */
-  a, img, video, iframe, .event, svg use {
+  a, img, video, iframe, .event, svg use, .tt-widget {
     filter: invert(1) hue-rotate(180deg);
   }
   /* Un-reinvert the image inside the link */
   a img, .event {
     filter: none;
+  }
+  .tt-widget iframe {
+    filter: none !important;
   }
   a:link {
     color: #B2F2BB;
