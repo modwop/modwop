@@ -119,6 +119,6 @@ a#modwop-twoyear-fadeimage:hover img{
     filter: invert(1) hue-rotate(180deg);
   }
   a:link{
-    color: #00ff00;
+    color: #00ffff;
   }
 }
