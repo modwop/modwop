@@ -119,22 +119,24 @@ a#modwop-twoyear-fadeimage:hover img{
     filter: invert(1) hue-rotate(180deg);
   }
   a:link {
-    color: #B3D1FF;
+    color: #D1E3FF;
     text-decoration: underline;
-    text-underline-offset: 3px;
+    text-decoration-color: rgba(209, 227, 255, 0.4);
+    transition: color 0.2s ease;
   }
   a:visited {
-    color: #E1BEE7;
+    color: #F3E5F5;
   }
   a:hover {
-    color: #B2F2BB;
-    text-decoration-thickness: 2px;
+    color: #FFFFFF;
+    text-decoration-color: #FFFFFF;
+    cursor: pointer;
   }
   a:active {
-    color: #FFCCBC;
+    color: #FFF9C4;
   }
   a:focus {
-    outline: 2px dashed #B3D1FF;
+    outline: 2px solid #FFFFFF;
     outline-offset: 4px;
   }
 }
