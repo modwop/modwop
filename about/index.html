@@ -19,9 +19,19 @@
 </head>
 
 <body>
-  <ol id="main-nav"></ol>
+  <ol id="main-nav">
+    <li><a href="https://link.modwop.com/nav/home">Home</a></li>
+    <li><a href="https://link.modwop.com/nav/about">About</a></li>
+    <li><a href="https://link.modwop.com/nav/events">Events</a></li>
+    <li><a href="https://link.modwop.com/nav/merch">Merch</a></li>
+    <li><a href="https://link.modwop.com/modwop-subscribe" target="_blank">Subscribe</a></li>
+  </ol>
   <div class="page about-page">
-    <div id="home-logo"></div>
+    <div id="home-logo">
+      <a href="https://link.modwop.com/about/home" title="Home">
+        <img class="logo" src="/modwop-logo-v1.png" alt="modwod.com">
+      </a>
+    </div>
     <h1>About</h1>
     <p>modwop.com showcases live electronic dance music artists on Eurorack &amp; Modular systems (without computers or DJs).</p>
     <p>With a mission to teach, perform and grow the art of modular synthesis, including workshops on topics such as: music synthesis, building a modular system, making music with modular systems, or soldering Eurorack kits.</p>
@@ -45,12 +55,5 @@
       <iframe style="border:0" id="odysee-iframe" width="560" height="315" src="https://odysee.com/$/embed/modwop.com-demo-reel-1/a13af4476dc2ad2e0ff5479577dd06beb790df26?r=E7gZMrDKnPAV4R1uC4LB7DobKVRXeuTQ" allowfullscreen></iframe>
     </div>
   </div>
-  <script src="/load-objects.js?v=1.0"></script>
-  <script>
-    loadEvents([
-      { targetUrl: '/', targetId: 'main-nav' },
-      { targetUrl: '/', targetId: 'home-logo' }
-    ]);
-  </script>
 </body>
 </html>
