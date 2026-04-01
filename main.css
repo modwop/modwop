@@ -13,7 +13,7 @@ a:link{
   max-width: 480px;
   width: 100%;
 }
-.page h1:first-child{
+.page > h1 {
   margin-top: 0;
 }
 .index-page,
