@@ -12,16 +12,6 @@ a:link{
   margin: 0 auto;
   max-width: 480px;
   width: 100%;
-  opacity: 0;
-  animation: fadeIn 200ms ease-in forwards;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 .index-page,
 .merch-page .not-shop{
