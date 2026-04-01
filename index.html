@@ -30,6 +30,32 @@
       <img class="logo" src="modwop-logo-v1.png" alt="modwod.com">
     </a>
     <h1>Upcoming events</h1>
+    <div id="next-event" class="event"></div>
+    <script>
+      async function syncNextEvent() {
+        const targetUrl = '/home/';
+        const targetId = 'next-event';
+        const currentDiv = document.getElementById(targetId);
+        if (!currentDiv) return;
+        try {
+          const response = await fetch(targetUrl);
+          if (!response.ok) throw new Error('Network response was not ok');
+          const htmlString = await response.text();
+          const parser = new DOMParser();
+          const doc = parser.parseFromString(htmlString, 'text/html');
+          const remoteDiv = doc.getElementById(targetId);
+          if (remoteDiv) {
+            currentDiv.innerHTML = remoteDiv.innerHTML;
+          } else {
+            console.warn(`Could not find #${targetId} on ${targetUrl}`);
+          }
+        } catch (error) {
+          console.error('Error syncing event data:', error);
+        }
+      }
+      syncNextEvent();
+    </script>
+    <!--
     <div class="event">
       <a href="https://link.modwop.com/20260424-website-buy-presales" title="2026 Apr 24th">
         <img src="2026-04-24-website-flyer.jpg" alt="Modwop + webuildmachines 2026 Apr 24 Wicker's Portal & Relativity Lounge + Locals">
@@ -54,6 +80,7 @@
       <blockquote><a href="https://link.modwop.com/20260424-event-directions" target="_blank">Click for directions</a></blockquote>
       <blockquote><b>Must be age 21+ to attend</b></blockquote>
     </div>
+    -->
     <!--
     <div class="event">
       <blockquote>We're taking the winter off, check back later or subscribe to our email list below :D</blockquote>
