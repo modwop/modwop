@@ -44,6 +44,7 @@ a:link{
   padding: 0 15px 0 5px;
   display: block;
   float: left;
+  line-height: 2em;
 }
 #main-nav li:first-child{
   padding-left: 0px;
