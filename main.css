@@ -118,7 +118,20 @@ a#modwop-twoyear-fadeimage:hover img{
   img, video, iframe, svg use {
     filter: invert(1) hue-rotate(180deg);
   }
-  a:link{
-    color: #00ffff;
+a:link {
+    color: #8AB4F8;
+  }
+  a:visited {
+    color: #C58AF9;
+  }
+  a:hover {
+    color: #A1EAFB;
+  }
+  a:active {
+    color: #F28B82;
+  }
+  a:focus {
+    outline: 2px solid #8AB4F8;
+    outline-offset: 4px;
   }
 }
