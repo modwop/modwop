@@ -89,8 +89,6 @@ a:link{
 }
 .page a.home-link,
 .page a.enter-link{
-  text-decoration: underline;
-  color: blue;
   text-align: center;
   display: block;
   width: 100%;
