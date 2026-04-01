@@ -109,6 +109,14 @@ a#modwop-twoyear-fadeimage:hover img{
 .event .tt-widget{
   padding: 0 10px;
 }
+@keyframes hueCycle {
+  from {
+    filter: invert(1) hue-rotate(180deg); /* Matches your dark mode base */
+  }
+  to {
+    filter: invert(1) hue-rotate(540deg); /* 180 + 360 for a full loop */
+  }
+}
 @media (prefers-color-scheme: dark) {
   html {
     filter: invert(1) hue-rotate(180deg);
@@ -120,6 +128,9 @@ a#modwop-twoyear-fadeimage:hover img{
   /* Un-reinvert the image inside the link */
   a img, .event {
     filter: none;
+  }
+  a img.animate-logo {
+    animation: hueCycle 5s linear infinite;
   }
   .tt-widget iframe {
     filter: none !important;
