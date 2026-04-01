@@ -129,7 +129,7 @@ a#modwop-twoyear-fadeimage:hover img{
   }
   /* Un-reinvert the image inside the link */
   a img {
-    filter: invert(1) hue-rotate(180deg);
+    filter: none;
   }
   a:link {
     color: #B2F2BB;
