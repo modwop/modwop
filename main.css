@@ -135,7 +135,8 @@ a#modwop-twoyear-fadeimage:hover img{
   a img.animate-logo {
     animation: hueCycle 5s linear infinite;
   }
-  .tt-widget iframe {
+  .tt-widget iframe,
+  a.sprd-link{
     filter: none !important;
   }
   .tt-widget {
