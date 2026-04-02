@@ -139,7 +139,10 @@ a.button:active {
   outline: none;
 }
 span.button{
+  width: 90%;
   margin-top: 12px;
+  margin-left: 5%;
+  line-height: 48px !important;
 }
 @keyframes hueCycle {
   from {
