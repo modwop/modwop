@@ -118,9 +118,8 @@ a#modwop-twoyear-fadeimage:hover img{
 a.button, 
 a.button:visited {
   display: inline-block;
-  padding: 12px 24px;
   background-color: #00FF00; 
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   border-radius: 4px;
   font-weight: 600;
