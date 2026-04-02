@@ -133,7 +133,7 @@ a#modwop-twoyear-fadeimage:hover img{
     filter: none;
   }
   a img.animate-logo {
-    animation: hueCycle 5s linear infinite;
+    animation: hueCycle 2s linear infinite;
   }
   .tt-widget iframe,
   a.sprd-link{
