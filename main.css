@@ -138,7 +138,6 @@ a.button:hover {
 a.button:focus,
 a.button:active {
   background-color: #ff00ff;
-  color: #000000;
   outline: none;
 }
 span.button{
@@ -196,7 +195,9 @@ span.button{
     outline: 2px dashed #B3D1FF;
     outline-offset: 4px;
   }
-  a.button {
+  span.button,
+  a.button, 
+  a.button:visited {
     color: #ffffff;
   }
 }
