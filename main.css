@@ -139,6 +139,9 @@ a.button:active {
   outline: none;
   transform: translateY(1px);
 }
+span.button{
+  margin-top: 12px;
+}
 @keyframes hueCycle {
   from {
     filter: invert(1) hue-rotate(180deg); /* Matches your dark mode base */
