@@ -72,6 +72,9 @@ a:link{
   color: black;
   border: 1px solid black;
 }
+#subscribe .mastfoot{
+  display: none !important;
+}
 .page img{
   display: block;
   width: 100%;
