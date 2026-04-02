@@ -115,6 +115,7 @@ a#modwop-twoyear-fadeimage:hover img{
 .event .tt-widget{
   padding: 0 10px;
 }
+span.button,
 a.button, 
 a.button:visited {
   display: inline-block;
