@@ -118,6 +118,8 @@ a#modwop-twoyear-fadeimage:hover img{
 span.button,
 a.button, 
 a.button:visited {
+  width: 90%;
+  margin-left: 5%;
   display: inline-block;
   background-color: #00FF00; 
   color: #ffffff;
@@ -139,9 +141,7 @@ a.button:active {
   outline: none;
 }
 span.button{
-  width: 90%;
   margin-top: 12px;
-  margin-left: 5%;
   line-height: 48px !important;
 }
 @keyframes hueCycle {
