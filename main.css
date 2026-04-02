@@ -87,7 +87,8 @@ a:link{
 .index-page{
   position: relative;
 }
-.vid-iframe{
+.vid-iframe,
+#subscribe{
   margin-bottom: 20px;
 }
 .vid-iframe iframe{
