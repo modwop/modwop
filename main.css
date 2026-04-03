@@ -94,6 +94,10 @@ a:link{
 .vid-iframe iframe{
   max-width: 100%;
 }
+.form iframe {
+  background: white;
+  border-radius: 2px;
+}
 .page a.home-link,
 .page a.enter-link{
   text-align: center;
