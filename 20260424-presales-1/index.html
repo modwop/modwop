@@ -36,6 +36,7 @@
       <!-- presales end -->
     </div>
     <div class="event">
+      <blockquote id="2024-04-24-buy-door2" style="display: block;"><b><span style="color:red;">Presales are sold out.</span> You will be able to buy tickets at the door.</b></blockquote>
       <div id="next-event"></div><script src="/load-next-event.js?v=1.6"></script>
     </div>
     <script>
@@ -46,14 +47,17 @@
               const presaleEl = document.getElementById('2024-04-24-buy-presales');
               const presaleEl2 = document.getElementById('2024-04-24-buy-presales-form');
               const doorEl = document.getElementById('2024-04-24-buy-door');
+              const doorEl2 = document.getElementById('2024-04-24-buy-door2');
               if (now >= deadline) {
                   if (presaleEl) presaleEl.style.display = 'none';
                   if (presaleEl2) presaleEl2.style.display = 'none';
                   if (doorEl) doorEl.style.display = 'block';
+                  if (doorEl2) doorEl2.style.display = 'block';
               } else {
                   if (presaleEl) presaleEl.style.display = 'block';
                   if (presaleEl2) presaleEl2.style.display = 'block';
                   if (doorEl) doorEl.style.display = 'none';
+                  if (doorEl2) doorEl2.style.display = 'none';
               }
           } catch (e) {
               console.error("Timer script error:", e);
