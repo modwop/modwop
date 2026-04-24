@@ -39,43 +39,6 @@
             <span id="buy-presales" class="open-event button">Buy tickets here</span>
           </a>
           <blockquote id="buy-door" style="display:none;"><b>Presales are sold out. You will be able to buy tickets at the door.</b></blockquote>
-          <script>
-              /**
-               * Toggles visibility based on a specific date and time in Minnesota.
-               * @param {string} targetIsoDate - The ISO 8601 string for the cutoff
-               */
-              function updateTicketingLinks(targetIsoDate) {
-                  try {
-                      // 1. Create the deadline date object
-                      const deadline = new Date(targetIsoDate);
-                      
-                      // 2. Get the current time
-                      const now = new Date();
-          
-                      const presaleEl = document.getElementById('buy-presales');
-                      const doorEl = document.getElementById('buy-door');
-          
-                      // 3. Compare Unix timestamps (milliseconds)
-                      if (now >= deadline) {
-                          // It is after 3pm on April 24: Show Door, Hide Presale
-                          if (presaleEl) presaleEl.style.display = 'none';
-                          if (doorEl) doorEl.style.display = 'block';
-                      } else {
-                          // It is before the deadline: Show Presale, Hide Door
-                          if (presaleEl) presaleEl.style.display = 'block';
-                          if (doorEl) doorEl.style.display = 'none';
-                      }
-                  } catch (e) {
-                      console.error("Timer script error:", e);
-                  }
-              }
-          
-              // Initialize: Target April 24, 2026, at 3:00 PM (15:00) Central Time
-              // The "-05:00" offset accounts for Central Daylight Time (CDT)
-              window.addEventListener('DOMContentLoaded', function() {
-                  updateTicketingLinks("2026-04-24T15:00:00-05:00");
-              });
-          </script>
           <blockquote>2026 Apr 24th - 8:30pm - 4am</blockquote>
           <blockquote><b>Featuring LIVE SETS all night from</b></blockquote>
           <blockquote><hr></blockquote>
