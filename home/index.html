@@ -34,7 +34,7 @@
     <div id="next-event-20260424">
       <div class="event">
         <div id="next-event">
-          <a href="https://link.modwop.com/20260424-website-buy-presales" title="2026 Apr 24th">
+          <a href="https://link.modwop.com/20260424-website-buy-presales" title="2026 Apr 24th" id="2024-04-24-buy-link">
             <img src="../2026-04-24-website-flyer.jpg" alt="Modwop + webuildmachines 2026 Apr 24 Wicker's Portal & Relativity Lounge + Locals">
             <span id="2024-04-24-buy-presales" class="open-event button">Buy tickets here</span>
           </a>
@@ -72,7 +72,13 @@
               const now = new Date();
               const presaleEl = document.getElementById('2024-04-24-buy-presales');
               const doorEl = document.getElementById('2024-04-24-buy-door');
+              const linkEl = document.getElementById('2024-04-24-buy-link');
               if (now >= deadline) {
+                  if (linkEl) {
+                      linkEl.removeAttribute('href');
+                      linkEl.style.cursor = 'default';
+                      linkEl.onclick = function(e) { e.preventDefault(); return false; };
+                  }
                   if (presaleEl) presaleEl.style.display = 'none';
                   if (doorEl) doorEl.style.display = 'block';
               } else {
