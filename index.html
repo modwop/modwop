@@ -41,7 +41,13 @@
               const now = new Date();
               const presaleEl = document.getElementById('2024-04-24-buy-presales');
               const doorEl = document.getElementById('2024-04-24-buy-door');
+              const linkEl = document.getElementById('2024-04-24-buy-link');
               if (now >= deadline) {
+                  if (linkEl) {
+                      linkEl.removeAttribute('href');
+                      linkEl.style.cursor = 'default';
+                      linkEl.onclick = function(e) { e.preventDefault(); return false; };
+                  }
                   if (presaleEl) presaleEl.style.display = 'none';
                   if (doorEl) doorEl.style.display = 'block';
               } else {
