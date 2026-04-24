@@ -13,6 +13,8 @@
       const remoteDiv = doc.getElementById(targetId);
       if (remoteDiv) {
         currentDiv.innerHTML = remoteDiv.innerHTML;
+        const event = new CustomEvent('nextEventLoaded');
+        document.dispatchEvent(event);
       } else {
         console.warn(`Could not find #${targetId} on ${targetUrl}`);
       }
