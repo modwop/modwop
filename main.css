@@ -118,15 +118,15 @@ a#modwop-twoyear-fadeimage:hover img{
   opacity: 0;
 }
 
-#next-event-20261107 a#2026-11-07-buy-link{
+#next-event-20261107 a#modwop-2026-11-07-buy-link{
   display: block;
   background:  url(https://modwop.com/resonance-2026-11-07-b.png) top center / contain no-repeat;
 }
-#next-event-20261107 a#2026-11-07-buy-link img{
+#next-event-20261107 a#modwop-2026-11-07-buy-link img{
   opacity: 1;
   transition: opacity 10s;
 }
-#next-event-20261107 a#2026-11-07-buy-link:hover img{
+#next-event-20261107 a#modwop-2026-11-07-buy-link:hover img{
   opacity: 0;
 }
 .event .tt-widget{
