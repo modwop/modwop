@@ -117,6 +117,18 @@ a#modwop-twoyear-fadeimage img{
 a#modwop-twoyear-fadeimage:hover img{
   opacity: 0;
 }
+
+#next-event-20261107 a#fadeimage-20261107{
+  display: block;
+  background:  url(https://modwop.com/resonance-2026-11-07-b.png) top center / contain no-repeat;
+}
+#next-event-20261107 a#fadeimage-20261107 img{
+  opacity: 1;
+  transition: opacity 10s;
+}
+#next-event-20261107 a#fadeimage-20261107:hover img{
+  opacity: 0;
+}
 .event .tt-widget{
   padding: 0 10px;
 }
