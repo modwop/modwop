@@ -39,9 +39,9 @@
           -->
           <a href="#" title="Modwop + webuildmachines 2026 Nov 7th Trovarsi & RMM + Locals" id="modwop-2026-11-07-buy-link">
             <img src="../resonance-2026-11-07-a.png" alt="Modwop + webuildmachines 2026 Nov 7th Trovarsi & RMM + Locals">
-            <span id="2026-11-07-buy-presales" class="open-event button">Buy tickets here</span>
+            <span id="modwop-2026-11-07-buy-presales" class="open-event button">Buy tickets here</span>
           </a>
-          <blockquote id="2024-11-07-buy-door" style="display:none;"><b><span style="color:red;">Presales are sold out.</span> You will be able to buy tickets at the door.</b></blockquote>
+          <blockquote id="modwop-2024-11-07-buy-door" style="display:none;"><b><span style="color:red;">Presales are sold out.</span> You will be able to buy tickets at the door.</b></blockquote>
           <blockquote>2026 Nov 7th - 9:30am - 3am</blockquote>
           <blockquote><b>Featuring LIVE Hardware sets all night from</b></blockquote>
           <blockquote><hr></blockquote>
@@ -69,6 +69,34 @@
         </div>
       </div>
     </div>
+    <script>
+      function updateTicketingLinks2(targetIsoDate) {
+          try {
+              const deadline = new Date(targetIsoDate);
+              const now = new Date();
+              const presaleEl = document.getElementById('modwop-2026-11-07-buy-presales');
+              const doorEl = document.getElementById('modwop-2024-11-07-buy-door');
+              const linkEl = document.getElementById('modwop-2026-11-07-buy-link');
+              if (now >= deadline) {
+                  if (linkEl) {
+                      linkEl.removeAttribute('href');
+                      linkEl.style.cursor = 'default';
+                      linkEl.onclick = function(e) { e.preventDefault(); return false; };
+                  }
+                  if (presaleEl) presaleEl.style.display = 'none';
+                  if (doorEl) doorEl.style.display = 'block';
+              } else {
+                  if (presaleEl) presaleEl.style.display = 'block';
+                  if (doorEl) doorEl.style.display = 'none';
+              }
+          } catch (e) {
+              console.error("Timer script error:", e);
+          }
+      }
+      window.addEventListener('DOMContentLoaded', function() {
+          updateTicketingLinks2("2026-11-07T14:00:00-05:00");
+      });
+    </script>
     <div id="subscribe" class="form">
       <script async src="https://eocampaign1.com/form/092c1f70-2ebf-11f1-85f0-fb31b8313005.js" data-form="092c1f70-2ebf-11f1-85f0-fb31b8313005"></script>
     </div>
