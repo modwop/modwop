@@ -63,18 +63,16 @@
       });
     </script>
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
-          document.querySelectorAll('.reveal-text').forEach(function(element) {
-              element.addEventListener('click', function() {
-                  const address = document.getElementById(this.id + '-address');
-          
-                  if (address) {
-                      this.style.display = 'none';
-                      address.style.display = 'block';
-                  }
-              });
-          });
-        });
+      document.addEventListener('click', function(event) {
+          const element = event.target.closest('.reveal-text');
+          if (element) {
+              const address = document.getElementById(element.id + '-address');
+              if (address) {
+                  element.style.display = 'none';
+                  address.style.display = 'block';
+              }
+          }
+      });
     </script>
     <div id="subscribe" class="form">
       <script async src="https://eocampaign1.com/form/092c1f70-2ebf-11f1-85f0-fb31b8313005.js" data-form="092c1f70-2ebf-11f1-85f0-fb31b8313005"></script>
