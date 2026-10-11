@@ -64,14 +64,6 @@
       </div>
     </div>
     <script>
-        window.addEventListener('DOMContentLoaded', function() {
-          document.getElementById('20261107-reveal').addEventListener('click', function() {
-              this.style.display = 'none';
-              document.getElementById('20261107-reveal-address').style.display = 'block';
-          });
-        });
-    </script>
-    <script>
       function updateTicketingLinks2(targetIsoDate) {
           try {
               const deadline = new Date(targetIsoDate);
@@ -97,6 +89,19 @@
       }
       window.addEventListener('DOMContentLoaded', function() {
           updateTicketingLinks2("2026-11-07T14:00:00-05:00");
+      });
+    </script>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+        document.querySelectorAll('.reveal-text').forEach(function(element) {
+          element.addEventListener('click', function() {
+            const address = document.getElementById(this.id + '-address');
+            if (address) {
+              this.style.display = 'none';
+              address.style.display = 'block';
+            }
+          });
+        });
       });
     </script>
     <div id="subscribe" class="form">
