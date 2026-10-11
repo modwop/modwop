@@ -39,6 +39,9 @@ a:link{
   margin: 0;
   border-bottom: 1px solid black;
 }
+.reveal-text {
+    cursor: pointer;
+}
 #main-nav.merch li:first-child{
   margin-left: 1em;
 }
