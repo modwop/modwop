@@ -35,13 +35,21 @@
       <div id="next-event"></div><script src="/load-next-event.js?v=1.3"></script>
     </div>
     <script>
-      function updateTicketingLinks(targetIsoDate) {
+        window.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('20261107-reveal').addEventListener('click', function() {
+              this.style.display = 'none';
+              document.getElementById('20261107-reveal-address').style.display = 'block';
+          });
+        });
+    </script>
+    <script>
+      function updateTicketingLinks2(targetIsoDate) {
           try {
               const deadline = new Date(targetIsoDate);
               const now = new Date();
-              const presaleEl = document.getElementById('2024-04-24-buy-presales');
-              const doorEl = document.getElementById('2024-04-24-buy-door');
-              const linkEl = document.getElementById('2024-04-24-buy-link');
+              const presaleEl = document.getElementById('modwop-2026-11-07-buy-presales');
+              const doorEl = document.getElementById('modwop-2024-11-07-buy-door');
+              const linkEl = document.getElementById('modwop-2026-11-07-buy-link');
               if (now >= deadline) {
                   if (linkEl) {
                       linkEl.removeAttribute('href');
@@ -58,8 +66,8 @@
               console.error("Timer script error:", e);
           }
       }
-      document.addEventListener('nextEventLoaded', function() {
-        updateTicketingLinks("2026-04-24T14:00:00-05:00");
+      window.addEventListener('DOMContentLoaded', function() {
+          updateTicketingLinks2("2026-11-07T14:00:00-05:00");
       });
     </script>
     <div class="form">
