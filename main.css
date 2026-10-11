@@ -40,7 +40,11 @@ a:link{
   border-bottom: 1px solid black;
 }
 .reveal-text {
-    cursor: pointer;
+  cursor: pointer;
+}
+.reveal-text::before {
+  content: "📍";
+  margin-right: 8px;
 }
 #main-nav.merch li:first-child{
   margin-left: 1em;
