@@ -30,25 +30,26 @@
     <a href="https://link.modwop.com/nav/home" title="Home">
       <img class="logo" src="../modwop-logo-v1.png" alt="modwod.com">
     </a>
-    <div class="form" id="2024-04-24-buy-presales-form">
-      <!-- presales begin -->
-      <div class="tt-widget"><div class="tt-widget-fallback"><p><a href="https://www.tickettailor.com/all-tickets/modwop/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" target="_blank">Click here to buy tickets</a><br><small><a href="https://www.tickettailor.com?rf=wdg_173773" class="tt-widget-powered">Sell tickets online with Ticket Tailor</a></small></p></div><script src="https://cdn.tickettailor.com/js/widgets/min/widget.js" data-url="https://www.tickettailor.com/all-tickets/modwop/?ref=website_widget&show_search_filter=true&show_date_filter=true&show_sort=true" data-type="inline" data-inline-minimal="true" data-inline-show-logo="false" data-inline-bg-fill="false" data-inline-inherit-ref-from-url-param="" data-inline-ref="website_widget"></script></div>
-      <!-- presales end -->
-    </div>
     <div class="event">
       <blockquote id="2024-04-24-buy-door2" style="display: block;"><b><span style="color:red;">Presales are sold out.</span> You will be able to buy tickets at the door.</b></blockquote>
       <div id="next-event"></div><script src="/load-next-event.js?v=1.6"></script>
     </div>
     <script>
-      function updateTicketingLinks(targetIsoDate) {
+        window.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('20261107-reveal').addEventListener('click', function() {
+              this.style.display = 'none';
+              document.getElementById('20261107-reveal-address').style.display = 'block';
+          });
+        });
+    </script>
+    <script>
+      function updateTicketingLinks2(targetIsoDate) {
           try {
               const deadline = new Date(targetIsoDate);
               const now = new Date();
-              const presaleEl = document.getElementById('2024-04-24-buy-presales');
-              const presaleEl2 = document.getElementById('2024-04-24-buy-presales-form');
-              const doorEl = document.getElementById('2024-04-24-buy-door');
-              const doorEl2 = document.getElementById('2024-04-24-buy-door2');
-              const linkEl = document.getElementById('2024-04-24-buy-link');
+              const presaleEl = document.getElementById('modwop-2026-11-07-buy-presales');
+              const doorEl = document.getElementById('modwop-2024-11-07-buy-door');
+              const linkEl = document.getElementById('modwop-2026-11-07-buy-link');
               if (now >= deadline) {
                   if (linkEl) {
                       linkEl.removeAttribute('href');
@@ -56,21 +57,17 @@
                       linkEl.onclick = function(e) { e.preventDefault(); return false; };
                   }
                   if (presaleEl) presaleEl.style.display = 'none';
-                  if (presaleEl2) presaleEl2.style.display = 'none';
                   if (doorEl) doorEl.style.display = 'block';
-                  if (doorEl2) doorEl2.style.display = 'block';
               } else {
                   if (presaleEl) presaleEl.style.display = 'block';
-                  if (presaleEl2) presaleEl2.style.display = 'block';
                   if (doorEl) doorEl.style.display = 'none';
-                  if (doorEl2) doorEl2.style.display = 'none';
               }
           } catch (e) {
               console.error("Timer script error:", e);
           }
       }
-      document.addEventListener('nextEventLoaded', function() {
-        updateTicketingLinks("2026-04-24T14:00:00-05:00");
+      window.addEventListener('DOMContentLoaded', function() {
+          updateTicketingLinks2("2026-11-07T14:00:00-05:00");
       });
     </script>
     <div id="subscribe" class="form">
