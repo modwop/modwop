@@ -51,18 +51,26 @@
           <blockquote><a href="https://link.modwop.com/20261107-nelsdot-bandcamp" target="_blank">NELSDOT</a></blockquote>
           <blockquote><hr></blockquote>
           <blockquote><a href="https://link.modwop.com/20261107-gateway-instagram" target="_blank">Gateway Twin Cities</a></blockquote>
-          <blockquote>526 Selby Ave, St Paul, MN 55102</blockquote>
-          <blockquote><a href="https://link.modwop.com/20261107-gateway-directions" target="_blank">Click for directions</a></blockquote>
-          <!--
-          <blockquote><hr></blockquote>
+          <blockquote class="reveal-text" id="20261107-reveal">Venue details will be emailed to ticket holders before the event</blockquote>
+          <div id="20261107-reveal-address" style="display:none;">
+            <blockquote>526 Selby Ave, St Paul, MN 55102</blockquote>
+            <blockquote><a href="https://link.modwop.com/20261107-gateway-directions" target="_blank">Click for directions</a></blockquote>
+          </div>
           <blockquote>For event address <a href="https://link.modwop.com/20261107-dm-webuildmachines" target="_blank">DM webuildmachines on instagram</a></blockquote>
           <blockquote>or <a href="https://link.modwop.com/20261107-dm-gateway" target="_blank">DM Gateway Twin Cities on instagram</a></blockquote>
-          -->
           <blockquote><hr></blockquote>
           <blockquote><b>Must be age 21+ to attend</b></blockquote>
         </div>
       </div>
     </div>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+          document.getElementById('20261107-reveal').addEventListener('click', function() {
+              this.style.display = 'none';
+              document.getElementById('20261107-reveal-address').style.display = 'block';
+          });
+        });
+    </script>
     <script>
       function updateTicketingLinks2(targetIsoDate) {
           try {
