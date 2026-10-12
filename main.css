@@ -129,7 +129,7 @@ a#modwop-twoyear-fadeimage:hover img{
 }
 #next-event-20261107 a#modwop-2026-11-07-buy-link img{
   opacity: 1;
-  transition: opacity 2s;
+  transition: opacity 1s ease 6s;
 }
 #next-event-20261107 a#modwop-2026-11-07-buy-link:hover img{
   opacity: 0;
